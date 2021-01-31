@@ -1,0 +1,13 @@
+<apex:page showHeader="false">
+    <apex:pageBlock >
+        <apex:pageBlockSection columns="2">
+            <apex:pageBlockSectionItem>
+             {! $User.FirstName } {! $User.LastName }
+                ({! $User.UserName })
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem>
+                 <apex:image url="https://developer.salesforce.com/files/salesforce-developer-network-logo.png"/>
+            </apex:pageBlockSectionItem>
+        </apex:pageBlockSection>                     
+    </apex:pageBlock>
+</apex:page>
