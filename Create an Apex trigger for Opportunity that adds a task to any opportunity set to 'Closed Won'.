@@ -7,7 +7,7 @@ trigger ClosedOpportunityTrigger on Opportunity (after insert) {
         if(opp.StageName == 'Closed Won')
         {
             Task t= new Task();
-            t.Subject ='Follow up TAsk';
+            t.Subject ='Follow up Test Task';
             t.WhatId= opp.Id;
             taskListToInsert.add(t);
         }
